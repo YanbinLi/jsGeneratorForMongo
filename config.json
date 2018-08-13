@@ -1,0 +1,19 @@
+[
+    {
+        "tableName": "table 1",
+        "colloction":"forTest",
+        "items":[{
+            "header":"表头",
+            "field":"a.b.c"
+        }],
+        "match":"",
+        "group":{
+            "id":[
+                "a.b.c","a.b.d"
+            ],
+            "max":[],
+            "min":[],
+            "sum":[]
+        }
+    }
+]
