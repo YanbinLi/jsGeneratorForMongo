@@ -1,6 +1,7 @@
 
 # -*- coding: utf-8 -*- 
 import json
+import re
 class JsGenerator:
     def __init__(self, config):
         config_file = open(config, "r",encoding="utf-8")
@@ -17,7 +18,17 @@ class JsGenerator:
 
 
     def __generateMatch(self, match):
+
+        ele = match.split(" ")
+
         return ""
+    
+    def __exical_analysis(self, input):
+        """词法分析器"""
+        input = re.sub(r"\s+", " ", a)
+        
+
+    
 
     def __generateUnwind(self, items):
         return ""
@@ -31,6 +42,9 @@ class JsGenerator:
         
 
 if __name__ == "__main__":
-    jg = JsGenerator("config.json")
+    a = "a b   c           \n  d" 
+    print(a)
+    b = re.sub(r"\s+", " ", a)
+    print(b)
+
     
-    print(jg.config)
